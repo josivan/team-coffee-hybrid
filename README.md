@@ -13,7 +13,9 @@ Create an application that sends notifications to the participants in the coffee
 * Push notifications:
   * to the next team mate scheduled to buy ingredients
   * to the next team mate scheduled to make coffee
-* Send messages to other app users as notifications
+* Send messages to other app users:
+  * asking for coffee
+  * notifying that the coffee was made
 
 # Architecture
 
