@@ -18,14 +18,29 @@ openMenu() {
       cssClass: 'action-sheet-basic-page',
       buttons: [
         {
-          text: 'I want coffee!'
+          text: 'I want coffee!',
+          icon: 'add'
         },
         {
-          text: 'Coffee is made!'
+          text: 'Coffee is made!',
+          icon: 'checkmark'
         },
         {
           text: 'Send a comment',
+          icon: 'quote',
           handler: data => this.showPrompt()
+        },
+        {
+          text: 'Need to buy sugar!',
+          icon: 'cart'
+        },
+        {
+          text: 'Need to buy coffee polder!',
+          icon: 'cart'
+        },
+        {
+          text: 'Cancel',
+          icon: 'close'
         }
       ]
     });
