@@ -37,8 +37,12 @@
     "cordova-plugin-device",
     "cordova-plugin-splashscreen",
     "ionic-plugin-keyboard",
-    "cordova-plugin-statusbar"
+    "cordova-plugin-statusbar",
+    "cordova-plugin-crosswalk-webview"
   ],
   "cordovaPlatforms": [],
-  "description": "team-coffe: An Ionic project"
+  "description": "team-coffe: An Ionic project",
+  "config" : {
+    "ionic_source_map" : "source-map"
+  }
 }
