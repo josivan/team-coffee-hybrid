@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { NavController, ActionSheetController, AlertController } from 'ionic-angular';
+import { NavController, ActionSheetController, AlertController, FabContainer } from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
@@ -8,11 +8,13 @@ import { NavController, ActionSheetController, AlertController } from 'ionic-ang
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController, public actionSheetCtrl: ActionSheetController, public alertCtrl: AlertController) {
-    
-  }
+  constructor(
+    public navCtrl: NavController, 
+    public actionSheetCtrl: ActionSheetController, 
+    public alertCtrl: AlertController,
+    ) { }
 
-openMenu() {
+openMenu(fab: FabContainer) {
     let actionSheet = this.actionSheetCtrl.create({
       title: 'Messages',
       cssClass: 'action-sheet-basic-page',
@@ -44,6 +46,7 @@ openMenu() {
         }
       ]
     });
+    fab.close();
     actionSheet.present();
   }
 
