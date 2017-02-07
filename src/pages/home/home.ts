@@ -61,8 +61,8 @@ export class HomePage {
       }
     },
     {
-      icon: 'checkmark',
-      title: 'Sugar',
+      icon: 'add',
+      title: 'Paper',
       color: this.buttonColor,
       handler: ()=> {
         //this.presentToast('Dont close on click');
@@ -77,8 +77,7 @@ export class HomePage {
       }
     },
     {
-      icon: 'checkmark',
-      title: 'Coffe',
+      title: 'Bought',
       color: this.buttonColor,
       handler: ()=> {
         //this.presentToast('Dont close on click');
