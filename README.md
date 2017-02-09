@@ -17,7 +17,7 @@ Create an application that sends notifications to the participants in the coffee
   * asking for coffee
   * notifying that the coffee was made
 
-# Architecture
+## Architecture
 
 * Ionic 2
 * Angular 2
