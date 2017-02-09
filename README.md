@@ -24,4 +24,11 @@ Create an application that sends notifications to the participants in the coffee
 
 ## Instalation
 
-To be written.
+```
+$ ionic start --v2 team-coffee-hybrid blank
+$ cd team-coffee-hybrid
+$ git init
+$ git remote add origin https://github.com/joabetc/team-coffee-hybrid.git 
+$ git fetch --all
+$ git reset --hard origin/master 
+```
