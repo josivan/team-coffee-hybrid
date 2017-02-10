@@ -4,13 +4,15 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { FabToolbar } from './components/fab-toolbar/fab-toolbar';
 import { RankingComponent } from './components/ranking/ranking.component';
+import { MessagesComponent } from './components/messages/messages.component';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     FabToolbar,
-    RankingComponent
+    RankingComponent,
+    MessagesComponent
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -20,7 +22,8 @@ import { RankingComponent } from './components/ranking/ranking.component';
     MyApp,
     HomePage,
     FabToolbar,
-    RankingComponent
+    RankingComponent,
+    MessagesComponent
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

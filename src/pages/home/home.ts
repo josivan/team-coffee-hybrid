@@ -4,6 +4,8 @@ import { NavController, ActionSheetController, AlertController, FabContainer } f
 
 import { Ranking } from '../../app/components/ranking/ranking';
 
+import { Messages } from '../../app/components/messages/messages';
+
 const RANKING: Ranking[] = [
     {
       name: 'Wagner',
@@ -31,6 +33,29 @@ const RANKING: Ranking[] = [
     }
   ];
 
+const MESSAGES: Messages[] = [
+  {
+    message: 'Coffee is made!',
+    author: 'by Wagner',
+    when: '1 min ago'
+  },
+  {
+    message: 'What a disgusting coffee!',
+    author: 'by Josivan',
+    when: '2 hours ago'
+  },
+  {
+    message: 'Need to buy sugar!',
+    author: 'by Flavia',
+    when: '3 days ago'
+  },
+  {
+    message: 'Need to buy coffee pouder!',
+    author: 'by Wagner',
+    when: '1 week ago'
+  }
+];
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -38,6 +63,7 @@ const RANKING: Ranking[] = [
 export class HomePage {
 
   ranking = RANKING;
+  messages = MESSAGES;
 
   public color: string = 'primary';
   public position: string = 'right';
